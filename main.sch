@@ -317,7 +317,7 @@ F 3 "" H 3400 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 2350 3950 0    50   BiDi ~ 0
-NRESET
+~RESET
 $Comp
 L Device:R R?
 U 1 1 5DDE0BB0
@@ -560,10 +560,10 @@ Wire Wire Line
 Connection ~ 5050 2150
 Wire Wire Line
 	5050 2150 5400 2150
-Text Label 8750 3750 0    50   ~ 0
-DIGITAL_0(UART_RX)
-Text Label 8750 3850 0    50   ~ 0
-DIGITAL_1(UART_TX)
+Text Label 9050 3750 0    50   ~ 0
+DIGITAL_0
+Text Label 9050 3850 0    50   ~ 0
+DIGITAL_1
 Text Label 9050 3950 0    50   ~ 0
 DIGITAL_2
 Text Label 9050 4050 0    50   ~ 0
@@ -600,9 +600,9 @@ SCL
 Text Label 9050 5550 0    50   ~ 0
 SDA
 Wire Wire Line
-	8750 3750 9500 3750
+	9050 3750 9500 3750
 Wire Wire Line
-	8750 3850 9500 3850
+	9050 3850 9500 3850
 Wire Wire Line
 	9050 3950 9500 3950
 Wire Wire Line
@@ -627,14 +627,14 @@ Wire Wire Line
 	9500 5450 9050 5450
 Wire Wire Line
 	9050 5550 9500 5550
-Text Label 5450 3550 0    50   ~ 0
-DIGITAL_0(UART_RX)
+Text Label 6200 3550 0    50   ~ 0
+DIGITAL_0
 Wire Wire Line
-	5450 3550 5300 3550
-Text Label 5450 3450 0    50   ~ 0
-DIGITAL_1(UART_TX)
+	6200 3550 5850 3550
+Text Label 6200 3450 0    50   ~ 0
+DIGITAL_1
 Wire Wire Line
-	5450 3450 5300 3450
+	6200 3450 5950 3450
 Text Label 5450 3350 0    50   ~ 0
 DIGITAL_2
 Wire Wire Line
@@ -718,4 +718,22 @@ Text Label 8800 5150 0    50   ~ 0
 DIGITAL_13(SCK)
 Wire Wire Line
 	8800 5150 9500 5150
+Text HLabel 6200 3700 2    50   Output ~ 0
+UART_TX
+Text HLabel 6200 3800 2    50   Input ~ 0
+UART_RX
+Wire Wire Line
+	6200 3700 5950 3700
+Wire Wire Line
+	5950 3700 5950 3450
+Connection ~ 5950 3450
+Wire Wire Line
+	5950 3450 5300 3450
+Wire Wire Line
+	6200 3800 5850 3800
+Wire Wire Line
+	5850 3800 5850 3550
+Connection ~ 5850 3550
+Wire Wire Line
+	5850 3550 5300 3550
 $EndSCHEMATC

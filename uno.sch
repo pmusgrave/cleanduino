@@ -40,6 +40,9 @@ S 6700 3100 1450 1450
 U 5DDA4A02
 F0 "Main Microcontroller" 50
 F1 "main.sch" 50
+F2 "~RESET" B L 6700 3650 50 
+F3 "UART_TX" O L 6700 3850 50 
+F4 "UART_RX" I L 6700 3750 50 
 $EndSheet
 Wire Wire Line
 	4900 3700 4600 3700
@@ -47,4 +50,10 @@ Wire Wire Line
 	4600 3800 4900 3800
 Wire Wire Line
 	4600 3900 4900 3900
+Wire Wire Line
+	6700 3650 6350 3650
+Wire Wire Line
+	6350 3750 6700 3750
+Wire Wire Line
+	6700 3850 6350 3850
 $EndSCHEMATC
