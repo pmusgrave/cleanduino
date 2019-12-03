@@ -492,4 +492,31 @@ F 3 "~" H 6950 4550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 4550 7300 4550
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even JP2
+U 1 1 5DEAF31A
+P 7050 3350
+F 0 "JP2" H 7100 3150 50  0000 C CNN
+F 1 "2x2 M - NM" H 7100 3050 50  0000 C CNN
+F 2 "" H 7050 3350 50  0001 C CNN
+F 3 "~" H 7050 3350 50  0001 C CNN
+	1    7050 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3450 6750 3450
+Wire Wire Line
+	6600 3350 6750 3350
+Wire Wire Line
+	7250 3450 7500 3450
+Wire Wire Line
+	7500 3450 7500 3250
+Wire Wire Line
+	7500 3250 6600 3250
+Wire Wire Line
+	7400 3350 7400 3150
+Wire Wire Line
+	7400 3150 6600 3150
+Wire Wire Line
+	7250 3350 7400 3350
 $EndSCHEMATC
